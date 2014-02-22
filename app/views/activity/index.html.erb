@@ -1,0 +1,23 @@
+<table>
+<thead>
+<tr>
+  <th>trackable_type</th>
+  <th>owner_id</th>
+  <th>owner_type</th>
+  <th>key</th>
+  <th>parameters</th>
+</tr>
+</thead>
+
+<tbody>
+<% @activities.each do |activity| %>
+    <tr>
+      <td><%= activity.trackable_type %></td>
+      <td><%= activity.owner_id %></td>
+      <td><%= activity.owner_type %></td>
+      <td><%= activity.key %></td>
+      <td><%= activity.parameters %></td>
+    </tr>
+<% end %>
+</tbody>
+</table>
